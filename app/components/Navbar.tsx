@@ -12,7 +12,6 @@ const Navbar = (props: Props) => {
 
     const handleAuth = () => {
       loginModal.onOpen();  
-      console.log('Login')
     }
   return (
     <motion.div initial={{ y:-30, opacity: 0}} animate={{ y:0, opacity: 1}} transition={{duration: 0.7}} 
@@ -25,7 +24,7 @@ const Navbar = (props: Props) => {
             <a href='/Docs' className='font-medium border-b-2 border-b-black py-1 hover:border-b-green-400'>
                 Documentation
             </a>
-            <AuthButton title='Get Started' onClick={() => handleAuth()} />
+            <AuthButton title='Login' onClick={() => handleAuth()} />
         </div>
        </div>
     </motion.div>

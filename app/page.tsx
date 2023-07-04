@@ -1,9 +1,15 @@
-import Image from 'next/image'
+import Designs from "./components/Designs";
+import Hero from "./components/Hero";
+
 
 export default function Home() {
+
   return (
-    <div className='grid place-items-center h-screen'>
-      <h2 className='text-2xl font-bold'>Home Page</h2>
+    <div className="px-6 pt-8 ">
+      <Hero />
+      <div className="pt-8">
+        <Designs />
+      </div> 
     </div>
   )
 }

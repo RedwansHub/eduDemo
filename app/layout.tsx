@@ -30,7 +30,10 @@ export default async function RootLayout({
         <ClientOnly>
           <ToasterProvider />
           <ModalsProvider/>
-          {!User ? <Navbar /> : <Appbar CurrentUser={User}/>}
+            {!User 
+              ? <Navbar /> 
+              : <Appbar CurrentUser={User}/>
+            }
         </ClientOnly>
 
         <SesProvider>

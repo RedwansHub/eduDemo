@@ -18,12 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(0deg, rgba(47,46,49,1) 0%, rgba(40,38,40,1) 45%, rgba(16,17,16,1) 78%); */
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); 
 }
 .custom-radio {
   appearance: none;
